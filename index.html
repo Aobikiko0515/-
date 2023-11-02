@@ -1,10 +1,42 @@
-<html>
-	<head>
-		<title>漢字星</title>
-	</head>
-	<body>
-
-		漢字検索
-
-	</body>
+OCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>漢字辞典</title>
+</head>
+<body>
+    <h1>漢字辞典</h1>
+    
+    <form action="search.php" method="get">
+        <label for="search">漢字を検索：</label>
+        <input type="text" id="search" name="keyword">
+        <input type="submit" value="検索">
+    </form>
+    
+    <h2>部首ごとに検索：</h2>
+    <ul>
+        <li><a href="radical1.php">部首1</a></li>
+        <li><a href="radical2.php">部首2</a></li>
+        <!-- 他の部首へのリンクを追加 -->
+    </ul>
+    
+    <h2>読みで検索：</h2>
+    <form action="reading.php" method="get">
+        <label for="reading">読みを入力：</label>
+        <input type="text" id="reading" name="reading">
+        <input type="submit" value="検索">
+    </form>
+    
+    <h2>同じ部首の漢字一覧：</h2>
+    <ul>
+        <li><a href="radical1_list.php">部首1の漢字一覧</a></li>
+        <li><a href="radical2_list.php">部首2の漢字一覧</a></li>
+        <!-- 他の部首の漢字一覧へのリンクを追加 -->
+    </ul>
+    
+    <h2>漢字の説明：</h2>
+    <!-- 漢字の説明を表示。制作者側が修正できるような編集機能を追加する場合は、適切なフォームやエディタを設置する -->
+    
+</body>
 </html>
